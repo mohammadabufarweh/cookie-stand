@@ -1,0 +1,15 @@
+
+table {
+  border-collapse: collapse;
+  text-align: center;
+}
+
+td, th {
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+}
+
+th {
+  background-color: #325288;
+  color: rgb(219, 50, 50);
+}
