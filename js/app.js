@@ -134,11 +134,15 @@ function eventCookie(event) {
     let restaurant = new Cookie(branchName, Number(minimumCust), Number(maxCustt), Number(avgCookies));
     restaurant.getAvg();
     restaurant.render();
-    
-    restaurant.gitCustNumber();
+    //restaurant.gitCustNumber();
+    seattleCookie.gitCustNumber();
+    // table.textContent='';
+    // seattleCookie.gitCustNumber();
     restaurantForm.reset();
   
     // seattleCookie.gitCustNumber.eventCookie().restaurant;
     // seattleCookie.gitCustNumber();
 }
+// seattleCookie.gitCustNumber();
+// table.textContent='';
 seattleCookie.gitCustNumber();
