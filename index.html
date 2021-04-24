@@ -6,50 +6,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="b">
     <header>
-        <h3>Salmon Cookies</h3>
-       
+        <h3 class="title">Salmon Cookies</h3>
+
         <a href="./sales.html">Salmon Cookies</a>
     </header>
     <main>
+        <section>
+            <img class="slideshow" src="./img/chinook.jpg" alt="">
+            <img class="slideshow" src="./img/cutter.jpeg" alt="">
+            <img class="slideshow" src="./img/fish.jpg" alt="">
+        </section>
+        <img class="slideshow" src="./img/family.jpg" alt="">
 
-        <img src="./img/chinook.jpg" alt="">
-        <img src="./img/cutter.jpeg" alt="">
-        <img src="./img/family.jpg" alt="">
-        <img src="./img/fish.jpg" alt="">
-        <img src="./img/frosted-cookie.jpg" alt="">
-        <img src="./img/salmon.png" alt="">
-        <img src="./img/shirt.jpg" alt="">
-        <p> Seattle branch </p>
-        <p> Location :7301 15th Ave NW, Seattle, WA 98117, United States</p>
-        <p> Hours open : 6am to 7 pm</p>
-        <p> Phone :+1 206-717-2827</p>
-        <hr>
-        <p> Tokyo branch </p>
-        <p> Location : Nihonbashimuromachi, Chuo City, Tokyo 103-8328, Japan </p>
-        <p> Hours open : 6am to 7 pm</p>
-        <p> Phone : +81 3-3270-8188</p>
-        <hr>
+        <img class="slideshow" src="./img/frosted-cookie.jpg" alt="">
+        <img class="slideshow" src="./img/shirt.jpg" alt="">
 
-        <p> Dubai branch </p>
-        <p> Location : Dubai International Financial Centre </p>
-        <p> Hours open : 6am to 7 pm</p>
-        <p> Phone : +971 4 359 6900</p>
-        <hr>
-        <p> Paris branch </p>
-        <p> Location : 3 Rue de Montfaucon, 75006 Paris, France</p>
-        <p> Hours open : 6am to 7 pm</p>
-        <p> Phone : +33 6 56 79 05 36</p>
-        <hr>
-        <p> Lima branch </p>
-        <p> :Calle Virgen del Pilar, 10, 29602 Marbella, Málaga, Spain</p>
-        <p>Hours open : 6am to 7 pm</p>
-        <p> Phone : +34 952 82 30 09</p>
+        <img class="slideshow" src="./img/salmon.png" alt="">
+        <button class="left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="right" onclick="plusDivs(+1)">&#10095;</button>
+        <section class="geneal">
+            <p class="p1"> Seattle branch </p>
+            <p> Location :7301 15th Ave NW, Seattle, WA 98117, United States</p>
+            <p> Hours open : 6am to 7 pm</p>
+            <p> Phone :+1 206-717-2827</p>
+            <hr>
+            <p class="p2"> Tokyo branch </p>
+            <p> Location : Nihonbashimuromachi, Chuo City, Tokyo 103-8328, Japan </p>
+            <p> Hours open : 6am to 7 pm</p>
+            <p> Phone : +81 3-3270-8188</p>
+            <hr>
+
+            <p class="p3"> Dubai branch </p>
+            <p> Location : Dubai International Financial Centre </p>
+            <p> Hours open : 6am to 7 pm</p>
+            <p> Phone : +971 4 359 6900</p>
+            <hr>
+            <p class="p4"> Paris branch </p>
+            <p> Location : 3 Rue de Montfaucon, 75006 Paris, France</p>
+            <p> Hours open : 6am to 7 pm</p>
+            <p> Phone : +33 6 56 79 05 36</p>
+            <hr>
+            <p class="p5"> Lima branch </p>
+            <p> :Calle Virgen del Pilar, 10, 29602 Marbella, Málaga, Spain</p>
+            <p>Hours open : 6am to 7 pm</p>
+            <p> Phone : +34 952 82 30 09</p>
+        </section>
+        <script>var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("slideshow");
+                if (n > x.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = x.length };
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex - 1].style.display = "block";
+            }
+        </script>
     </main>
+
 </body>
 
 </html>

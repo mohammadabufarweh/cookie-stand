@@ -139,10 +139,12 @@ function eventCookie(event) {
     // table.textContent='';
     // seattleCookie.gitCustNumber();
     restaurantForm.reset();
-  
+
     // seattleCookie.gitCustNumber.eventCookie().restaurant;
     // seattleCookie.gitCustNumber();
 }
+let foot =seattleCookie.gitCustNumber();
+
 // seattleCookie.gitCustNumber();
 // table.textContent='';
-seattleCookie.gitCustNumber();
+//console.log(seattle.gitCustNumber);
