@@ -1,15 +1,71 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+.b{
+  width: 960px;
+margin: auto;
+background-color: rgb(238, 192, 177);
+position: relative;
+}
 table {
   border-collapse: collapse;
   text-align: center;
+  font-family: Arial, sans-serif;
+  color: blue;
+  background-color: rgb(236, 236, 174);
+left: 250px;
+top: 500px; 
+
 }
 
 td, th {
   border: 1px solid #ccc;
   padding: 5px 10px;
+  
 }
 
 th {
   background-color: #325288;
   color: rgb(219, 50, 50);
+}
+.title{
+font-family: 'Zen Dots', cursive;
+text-align: center;
+color: darkmagenta;
+}
+header a{
+  text-decoration: none;
+  margin: auto;
+}
+.slideshow{
+  position: relative;
+  width: 600px;
+  height: 300px;
+ padding-left: 180px;
+
+}
+.right{
+  position:absolute;
+  top:208px;
+  left:757px;
+}
+.left{
+  position:absolute;
+  top:208px;
+  left:180px;
+}
+/* .images{
+  display:grid ;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.images3{
+  display: grid;
+  margin: auto;
+}
+.images2{
+  display:grid ;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+} */
+.geneal{
+  font-family: Georgia, serif;
+color: crimson;
 }
